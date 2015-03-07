@@ -18,7 +18,7 @@ using std::swap;
  * @param[in] n The total number of elements of input array.
  */
 template<typename T>
-void selectionSort(T array[], const int n){
+void insertionSort(T array[], const int n){
 	for(int i=1; i<n; i++){
 		T temp = array[i];
 		int j;
@@ -41,13 +41,13 @@ void printArray( T array[], const size_t size){
 }
 
 /**
- *	Demo quicksort.
+ *	Demo insertion sort.
  */
 int main(){
 	float a[6]={6.1, 5.9, 4.2, 3.6, 2.5, 1.7};
 	
 	printArray(a,6);
-	selectionSort(a,6);
+	insertionSort(a,6);
 	printArray(a,6);	
 	return 0;
 }
